@@ -78,8 +78,6 @@ To use the LanguageFriend app locally:
 To see the LanguageFriend app in action, check out our demo video:
 - [LanguageFriend Demo on YouTube](https://youtu.be/vptRdD3QK44?si=04TwyIxVXFekCUvL)
 
-You can also find the demo video and other important documents such as the gAI declaration in the "Deliverables" folder.
-
 ## Additional Information
 
 You can also navigate to additional pages by entering the paths `/about`, `/contact`, `/transcript`, and more in your browser. The routes are defined in the `app.py` file.
