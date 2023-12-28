@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}
+
+{% endblock %}
+{% block content %}
+<script >
+    $( document ).ready(function() {
+     
+
+
+
+    })
+</script>
+
+
+<div class="logo-container"><img src="{{url_for('static', filename='logo.png')}} " alt="language-friend-logo"></div>
+{% if response != "": %}
+<!--if block html code-->
+    <div class="feedback-msg-container"><div class="feedback-msg error">{{response}}</div></div>
+{% endif %}
+<div class="login-container">
+<form id="login" action="/" method="post">
+<div class="form-input-group">
+    <label for="username">Input Your Username</label>
+    <input type="text" name="username" id="username"></input>
+</div>
+<div class="form-input-group">
+    <label for="password">Input Your Password</label>
+    <input type="password" name="password" id="password"></input>
+</div>
+<button type="submit" class="submit-btn">Login</button>
+<p>Login with Google</p>
+</form>
+</div>
+<div class="login-footer">
+<p>Don't have an account? <a href="#">Register.</a></p>
+</div>
+{% endblock %}

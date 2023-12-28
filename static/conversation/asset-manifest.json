@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/conversation/static/css/main.b28bd8bb.css",
+    "main.js": "/static/conversation/static/js/main.2c2ba34d.js",
+    "static/js/787.be7f2c53.chunk.js": "/static/conversation/static/js/787.be7f2c53.chunk.js",
+    "static/media/JJ-video.mp4": "/static/conversation/static/media/JJ-video.98d8328177e09116ab18.mp4",
+    "static/media/JJ phonecall.mp3": "/static/conversation/static/media/JJ phonecall.c0f96ad8400c54aa9b66.mp3",
+    "static/media/ellipse-6.png": "/static/conversation/static/media/ellipse-6.51bcb9eb2e2848036115.png",
+    "static/media/image-3.png": "/static/conversation/static/media/image-3.43e6889b5c38a5c1c811.png",
+    "static/media/vector-2.svg": "/static/conversation/static/media/vector-2.ff29b5324253c28c454571745583daae.svg",
+    "static/media/vector-6.svg": "/static/conversation/static/media/vector-6.69662ffc74b41b787f938e9f4b01a485.svg",
+    "static/media/vector.svg": "/static/conversation/static/media/vector.88980a077ebb9006748c162c9530a44b.svg",
+    "static/media/sendIcon.svg": "/static/conversation/static/media/sendIcon.e2decdbd32704145993cdfeed42de91d.svg",
+    "static/media/vector-4.svg": "/static/conversation/static/media/vector-4.f83ec00b3ac818a73598cfdbf315fb1d.svg",
+    "static/media/frame-1.svg": "/static/conversation/static/media/frame-1.5ba7009063e6b18e9f020e43b7f84ba5.svg",
+    "index.html": "/static/conversation/index.html",
+    "static/media/frame-5.svg": "/static/conversation/static/media/frame-5.ff77051b9e7eb3882ca1db35d4cec3b8.svg",
+    "static/media/navbar-3.svg": "/static/conversation/static/media/navbar-3.3792de336487a5f4ee62.svg",
+    "static/media/rectangle-18-1.svg": "/static/conversation/static/media/rectangle-18-1.61f008aa01108ff5c5ce.svg",
+    "static/media/rectangle-18.svg": "/static/conversation/static/media/rectangle-18.da0f6dca72ffcc0283db.svg",
+    "static/media/frame-2.svg": "/static/conversation/static/media/frame-2.f46133f0e18f1917a5d7d4fbbd239533.svg",
+    "static/media/frame-4.svg": "/static/conversation/static/media/frame-4.16f56a08ea14cc6cbde432f8aa5ff3b7.svg",
+    "static/media/frame-3.svg": "/static/conversation/static/media/frame-3.986f56e3e2697ae5d8b18ec8fadd6700.svg",
+    "static/media/line-1.svg": "/static/conversation/static/media/line-1.406d01ce4dc3724dd03dee33d5a95be3.svg",
+    "static/media/line.svg": "/static/conversation/static/media/line.02b41fb61f4f3e5fea2fd4cc23cc092a.svg",
+    "main.b28bd8bb.css.map": "/static/conversation/static/css/main.b28bd8bb.css.map",
+    "main.2c2ba34d.js.map": "/static/conversation/static/js/main.2c2ba34d.js.map",
+    "787.be7f2c53.chunk.js.map": "/static/conversation/static/js/787.be7f2c53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b28bd8bb.css",
+    "static/js/main.2c2ba34d.js"
+  ]
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Conversation</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Lexend:500,400);
+        @font-face {
+            font-family: "Font Awesome 5 Free-Solid";
+            src: url("https://anima-uploads.s3.amazonaws.com/5aa4ed775d7c3d000ce877fc/Font Awesome 5 Free-Solid-900.otf") format("opentype");
+        }
+    </style>
+    <link rel="manifest" href="{{ url_for('static', filename='conversation/manifest.json') }}"/>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+        * {
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box;
+        }
+        body, html {
+            background-color: #454545;
+            width: 100%;
+            padding-top: 10px;
+        }
+        button:focus-visible {
+            outline: 2px solid #4a90e2!important;
+            outline: -webkit-focus-ring-color auto 5px!important;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <link href="{{ url_for('static', filename='conversation/styleguide.css') }}" rel="stylesheet"/>
+    <script defer="defer" src="{{ url_for('static', filename='conversation/static/js/main.2c2ba34d.js') }}"></script>
+    <link href="{{ url_for('static', filename='conversation/static/css/main.b28bd8bb.css') }}" rel="stylesheet">
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+</body>
+</html>

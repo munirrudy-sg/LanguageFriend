@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+
+
+<div class="header-nav">
+  <a href="/home/" class="lf-nav-btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+</div>
+<div class="header-nav-title">
+  <h1>Summary</h1>
+</div>
+<div class="summary-profile-container">
+  <div class = "profile-pic-mask"><img src="{{url_for('static', filename='logo.png')}} " alt="language-friend-logo"></div>
+  <h2>Jun Jie</h2>
+</div>
+
+
+<div class="summary-container">
+   
+    <div class="summary-stats-container">
+      <div class="summary-stats-group">
+        <h2>Statistics</h2>
+        <h3>Duration: 42 Hours</h3>
+        <h3>Words Spoken: 62400 Words</h3>
+      </div>
+      <div class="summary-stats-group">
+        <h2>Errors</h2>
+        <h3>Grammar: 10 errors (<span class="negative">+4 from previous</span>)</h3>
+        <h3>Vocabulary: 3 errors (<span class="positive">-2 from previous</span>)</h3>
+        <h3>Pronunciation: 3 errors (<span class="positive">-6 from previous</span>)</h3>
+      </div>
+        <div class="summary-btn-group">
+          <a href="/transcript/" class="lf-btn">View Transcript</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="app-bg-footer summary"><img src="{{url_for('static', filename='summary-bg.png')}} " alt="language-friend-logo"></div>
+
+
+
+{% endblock %}

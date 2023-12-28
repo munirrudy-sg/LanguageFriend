@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+
+    .tooltipz {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    }
+
+    .tooltipz .tooltiptextz {
+      visibility: hidden;
+      width: 200px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      top: 125%; /* Position the tooltip above the text */
+      left: 50%;
+      margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+      transition: opacity 0.3s;
+    }
+
+    .tooltipz:hover .tooltiptextz {
+      visibility: visible;
+      opacity: 1;
+    }    
+
+    body {
+
+        font-family: Lexend;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        background-color: #454545;
+        margin: 0;
+        padding: 20px;
+    }
+        
+    .header {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: #3498DB;
+        padding: 10px;
+        height: 123px;
+    }
+
+    .message2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-radius: 8px;
+        background-color: #E4E4E4;
+        padding: 8px 20px 20px;
+    }
+
+    .text p {
+        margin: 0;
+        font-size: 14px;
+        color: #1B1A57;
+    }
+
+    .time {
+        font-size: 12px;
+        color: #999;
+        position: absolute;
+        right: 22px;        /* Gives some padding from the right */
+        bottom: 15px;        /* Gives some padding from the bottom */
+    }
+         
+    </style>
+</head>
+<body>
+    <div class="header-nav">
+        <a href="javascript:history.back()" class="lf-nav-btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="header-nav-title-overview">
+        <h1>Transcript</h1>
+    </div>
+
+    <div class="header">
+        <h1> </h1>
+    </div>
+
+    <div class="message2">
+        <img class="avatar" src="{{url_for('static', filename='logo.png')}} " alt="language-friend-logo">
+        <div class="text">
+            <div class="tooltipz">
+                <p>我想去爬山</p>
+                <span class="tooltiptextz">爬 means to climb while 山 means mountain. As a whole it means to climb the mountain</span>
+              </div>
+            <span class="time">16.04</span> 
+        </div> 
+    </div>
+
+    <div class="message2">
+        <img class="avatar" src="{{url_for('static', filename='logo.png')}} " alt="language-friend-logo">
+        <div class="text">
+            <p>哇！这么快卷定了？</p>
+            <span class="time">16.04</span>
+        </div>
+    </div>
+
+    <div class="message2">
+        <img class="avatar" src="{{url_for('static', filename='logo.png')}} " alt="language-friend-logo">
+        <div class="text">
+            <p>did you mean 决定 instead of 卷定? Let’s try that again </p>
+            <span class="time">16.04</span>
+        </div>
+    </div>
+
+    <div class="message2">
+        <img class="avatar" src="{{url_for('static', filename='logo.png')}} " alt="language-friend-logo">
+        <div class="text">
+            <p>哇！你那么快就决定了？</p>
+            <span class="time">16.04</span>
+        </div>
+    </div>
+
+    <div class="message2">
+        <img class="avatar" src="{{url_for('static', filename='logo.png')}} " alt="language-friend-logo">
+        <div class="text">
+            <p>对啊, 我一直都很想去的。。。你要陪我去吗？</p>
+            <span class="time">16.04</span>
+        </div>
+    </div>
+
+    <script src="{{url_for('static', filename='tooltip.js')}}"></script>
+{% endblock %}

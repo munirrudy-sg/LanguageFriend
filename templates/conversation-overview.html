@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+
+<div class="overview-container">
+
+    <div class="header-nav">
+        <a href="/home" class="lf-nav-btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="header-nav-title-overview">
+        <h1>Conversation</h1>
+    </div>
+
+    <div class="conversation-list">
+
+        <a href="/conversation">
+            <div class="conversation-item">
+                <img class="conversation-image" src="{{url_for('static', filename='profile-image.png')}} " alt="Profile Picture">
+                <div class="conversation-details">
+                    <h2 class="conversation-name">Jun Jie</h2>
+                    <p class="conversation-message">Goodbye!</p>
+                </div>
+                <div class="conversation-time">
+                    17:09
+                </div>
+            </div>
+        </a>
+
+        <a href="/conversation">
+            <div class="conversation-item">
+                <img class="conversation-image" src="{{url_for('static', filename='profile-image.png')}} " alt="Profile Picture">
+                <div class="conversation-details">
+                    <h2 class="conversation-name">Travis</h2>
+                    <p class="conversation-message">okay</p>
+                </div>
+                <div class="conversation-time">
+                    Yesterday
+                </div>
+            </div>
+        </a>
+
+        <a href="/conversation">
+            <div class="conversation-item">
+                <img class="conversation-image" src="{{url_for('static', filename='profile-image.png')}} " alt="Profile Picture">
+                <div class="conversation-details">
+                    <h2 class="conversation-name">Kevin</h2>
+                    <p class="conversation-message">see you tomorrow</p>
+                </div>
+                <div class="conversation-time">
+                    Sun
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

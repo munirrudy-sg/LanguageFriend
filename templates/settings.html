@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
+// slider
+
+
+</script>
+<div class="header-nav">
+    <a href="javascript:history.back()" class="lf-nav-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    <h1>Settings</h1>
+    <button type="button" class="lf-nav-btn" data-toggle="modal" data-target="#exampleModal">
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+      </button>
+</div>
+<div class="settings-spacer"></div>
+{% if response != "": %}
+<!--if block html code-->
+    <div class="feedback-msg-container"><div class="feedback-msg">{{response}}</div></div>
+{% endif %}
+
+<div class="login-container2">
+<form id="settings" action="/settings/" method="post">
+<div class="form-input-group2">
+    <label for="ui-lang">User Interface Language</label>
+    <div class="select-container">
+        <select name="ui-lang" id="ui-lang">
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Korean">Korean</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Chinese (simplified)">Chinese (simplified)</option>
+            <option value="Chinese (traditional)">Chinese (traditional)</option>
+        </select>
+    </div>
+</div>
+<div class="form-input-group2">
+    <label for="learned-lang">Learned Language</label>
+    <div class="select-container">
+        <select name="learned-lang" id="learned-lang">
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Korean">Korean</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Chinese (simplified)">Chinese (simplified)</option>
+            <option value="Chinese (traditional)">Chinese (traditional)</option>
+        </select>
+    </div>
+</div>
+<div class="form-input-group2">
+    <label for="speed">Select the speed of spoken audio</label>
+</div>
+<div class ="slide-title-container"><p>Slow</p><p>Fast</p></div>
+<div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange" name="speed">
+  </div>
+<button type="submit" class="submit-btn2">Save</button>
+</form>
+</div>
+<div class="login-footer">
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <img src="{{url_for('static', filename='faqimg.jpeg')}} " alt="conversation-image">
+                    <h6>Conversation:</h6>
+                    <p>Create a profile to save your learning progress and keep learning for free!</p>
+                </div>
+                <div class="modal-section">
+                    <img src="{{url_for('static', filename='faqimg.jpeg')}} " alt="conversation-image">
+                    <h6>Scenario:</h6>
+                    <p>Create a profile to save your learning progress and keep learning for free!</p>
+                </div>
+                <div class="modal-section">
+                    <img src="{{url_for('static', filename='faqimg.jpeg')}} " alt="conversation-image">
+                    <h6>Settings:</h6>
+                    <p>Create a profile to save your learning progress and keep learning for free!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<div class="app-bg-footer2"><img src="{{url_for('static', filename='settings-bg.png')}} " alt="language-friend-logo"></div>
+{% endblock %}

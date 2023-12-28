@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
+</script>
+<div class="header-nav">
+    <a href="/" class="lf-nav-btn"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+    <button type="button" class="lf-nav-btn" data-toggle="modal" data-target="#exampleModal">
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+      </button>
+</div>
+<div class="logo-container"><img src="{{url_for('static', filename='logo.png')}} " alt="language-friend-logo"></div>
+<div class="home-button-container">
+    <a href="/prelesson-settings/?dest=/conversation-overview/" class="lf-btn">Conversation</a>
+    <a href="/prelesson-settings/?dest=/scenario-overview/" class="lf-btn">Scenario</a>
+    <a href="/settings/" class="lf-btn-alt">Settings</a>
+
+</div>
+
+<div class="home-stats-container">
+   
+    <div class="home-stats-group">
+        <h3>Hours Practiced: 42 Hours</h3>
+        <h3>Words Spoken: 62400 Words</h3>
+        <h3>Accuracy Rate: 72.2 %</h3>
+    </div>
+
+</div>
+
+<div class="app-bg-footer"><img src="{{url_for('static', filename='home-bg.png')}} " alt="language-friend-logo"></div>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Help</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="modal-section">
+                  <img src="{{url_for('static', filename='faqimg.jpeg')}} " alt="conversation-image">
+                  <h6>Conversation:</h6>
+                  <p>Create a profile to save your learning progress and keep learning for free!</p>
+              </div>
+              <div class="modal-section">
+                  <img src="{{url_for('static', filename='faqimg.jpeg')}} " alt="conversation-image">
+                  <h6>Scenario:</h6>
+                  <p>Create a profile to save your learning progress and keep learning for free!</p>
+              </div>
+              <div class="modal-section">
+                  <img src="{{url_for('static', filename='faqimg.jpeg')}} " alt="conversation-image">
+                  <h6>Settings:</h6>
+                  <p>Create a profile to save your learning progress and keep learning for free!</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

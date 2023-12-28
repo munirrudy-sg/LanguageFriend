@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+
+<div class="overview-container">
+
+    <div class="header-nav">
+        <a href="/home" class="lf-nav-btn"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="header-nav-title-overview">
+        <h1>Scenario</h1>
+    </div>
+
+    <div class="scenario-list">
+
+        <a href="/scenario/">
+            <div class="random-scenario-item">
+                <div class="scenario-details">
+                    <h2 class="scenario-name">Random Scenario</h2>
+                    <p class="scenario-description">Feeling lucky? Practice a random scenario!</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="/scenario/">
+            <div class="scenario-item">
+                <img class="scenario-image" src="{{url_for('static', filename='scenario-image.png')}} " alt="Profile Picture">
+                <div class="scenario-details">
+                    <h2 class="scenario-name">Ordering Food</h2>
+                    <p class="scenario-description">Practice ordering food from a fast food restaurant.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="/scenario/">
+            <div class="scenario-item">
+                <img class="scenario-image" src="{{url_for('static', filename='scenario-image.png')}} " alt="Profile Picture">
+                <div class="scenario-details">
+                    <h2 class="scenario-name">Asking for Directions</h2>
+                    <p class="scenario-description">Quick! You have to find the nearest toilet urgently.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="/scenario/">
+            <div class="scenario-item">
+                <img class="scenario-image" src="{{url_for('static', filename='scenario-image.png')}} " alt="Profile Picture">
+                <div class="scenario-details">
+                    <h2 class="scenario-name">Shopping</h2>
+                    <p class="scenario-description">Find out if the limited edition item that you are looking for is in stock.</p>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

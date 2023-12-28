@@ -1,0 +1,32 @@
+:root {
+  --extra-large-text-regular-font-family: "Lexend-Regular", Helvetica;
+  --extra-large-text-regular-font-size: 18px;
+  --extra-large-text-regular-font-style: normal;
+  --extra-large-text-regular-font-weight: 400;
+  --extra-large-text-regular-letter-spacing: -0.699999988079071px;
+  --extra-large-text-regular-line-height: 145.00000476837158%;
+  --gray-1: rgba(51, 51, 51, 1);
+  --text-primary: rgba(27, 26, 87, 1);
+  --text-secondary: rgba(79, 94, 123, 1);
+  --variable-collection-LF-black: rgba(44, 62, 80, 1);
+  --variable-collection-LF-blue: rgba(52, 152, 219, 1);
+  --variable-collection-LF-darkblue: rgba(41, 128, 185, 1);
+  --blue-1: rgba(47, 128, 237, 1);
+  --text-primary: rgba(27, 26, 87, 1);
+  --text-secondary: rgba(79, 94, 123, 1);
+  --variable-collection-LF-black: rgba(44, 62, 80, 1);
+  --variable-collection-LF-blue: rgba(52, 152, 219, 1);
+  --variable-collection-LF-darkblue: rgba(41, 128, 185, 1);
+  --extra-large-text-regular-font-family: "Lexend-Regular", Helvetica;
+  --extra-large-text-regular-font-size: 18px;
+  --extra-large-text-regular-font-style: normal;
+  --extra-large-text-regular-font-weight: 400;
+  --extra-large-text-regular-letter-spacing: -0.699999988079071px;
+  --extra-large-text-regular-line-height: 145.00000476837158%;
+  --gray-1: rgba(51, 51, 51, 1);
+  --text-primary: rgba(27, 26, 87, 1);
+  --text-secondary: rgba(79, 94, 123, 1);
+  --variable-collection-LF-black: rgba(44, 62, 80, 1);
+  --variable-collection-LF-blue: rgba(52, 152, 219, 1);
+  --variable-collection-LF-darkblue: rgba(41, 128, 185, 1);
+}
